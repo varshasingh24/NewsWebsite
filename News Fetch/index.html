@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="NewsLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="my-logo">
+                <img src="NewsLogo.png" alt="my logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <button class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')"> Sports</button>
+                    <button class="hover-link nav-item" id="Economy"
+                        onclick="onNavItemClick('Economy')">Economy</button>
+                    <button class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">
+                        Politics</button>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="search news">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+
+        </div>
+
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+
+    </main>
+    <template id="template-news-cards">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is title</h3>
+                <h6 class="news-source" id="news-source">End Gadget </h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                    similique consectetur voluptas voluptates aut dignissimos accusamus vel dolore officiis quibusdam
+                    magnam, corporis cum eligendi nobis amet? Vitae quidem nihil id!
+                    Doloremque reiciendis adipisci placeat beatae officia voniti placeat magnam nam distinctio, fugit
+                    pariatur soluta, suscipit alias nihil laborum voluptatum mollitia, nisi maiores.</p>
+            </div>
+
+        </div>
+
+    </template>
+    <!-- -------------------------Footer-------------------------------->
+
+    <hr class="featurette-divider">
+    <div class="container">
+
+        <footer class="news-footer" id="news-footer">
+            <p> Website build for fetching News from different place using api <a
+                    href="https://newsapi.org"><strong>NewsApi</strong></a> </p>
+            <p>
+                <a href="#"> <strong>Back to top</strong></a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
